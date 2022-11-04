@@ -37,12 +37,11 @@ editValueButton.addEventListener('click', function() {
   modalActionsContainer.classList.add('modal-actions');
   modal.appendChild(modalActionsContainer);
 
-  let cancelButton = document.createElement('button');
-  cancelButton.setAttribute('type', 'button');
-  cancelButton.classList.add('btn-cancel');
-  cancelButton.textContent = 'Cancel';
-  cancelButton.addEventListener('click', closeModal);
-  modalActionsContainer.appendChild(cancelButton);
+  let closeButton = document.createElement('div');
+  closeButton.classList.add('close-button');
+  closeButton.textContent = 'X';
+  closeButton.addEventListener('click', closeModal);
+  modalActionsContainer.appendChild(closeButton);
 
   let confirmButton = document.createElement('button');
   confirmButton.setAttribute('type', 'button');

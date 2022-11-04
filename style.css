@@ -94,16 +94,6 @@ button:active {
   text-align: right;
 }
 
-button.btn-cancel {
-  border-color: red;
-  color: red;
-}
-
-button.btn-cancel:hover,
-button.btn-cancel:active {
-  color: white;
-  background: red;
-}
 
 button.btn-confirm {
   border-color: green;
