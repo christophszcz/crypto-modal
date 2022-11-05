@@ -23,25 +23,29 @@ editValueButton.addEventListener('click', function() {
   modal = document.createElement('div');
   modal.classList.add('modal');
 
-  let modalHeading = document.createElement('h1');
-  modalHeading.textContent = 'BTC Address';
-  modal.appendChild(modalHeading);
+  let modalHeader = document.createElement('div');
+  modalHeader.classList.add('modal-header');
+  modal.appendChild(modalHeader);
 
-  let qrCode = document.createElement('img');
-  qrCode.height = '200';
-  qrCode.width = '200';
-  qrCode.src = "./img/btc-address.jpg";
-  modal.appendChild(qrCode);
+  let modalHeading = document.createElement('div');
+  modalHeading.textContent = 'BTC Address';
+  modalHeader.appendChild(modalHeading);
+
+  let closeButton = document.createElement('div');
+  closeButton.classList.add('close-button');
+  closeButton.textContent = 'x';
+  closeButton.addEventListener('click', closeModal);
+  modalHeader.appendChild(closeButton);
 
   let modalActionsContainer = document.createElement('div');
   modalActionsContainer.classList.add('modal-actions');
   modal.appendChild(modalActionsContainer);
 
-  let closeButton = document.createElement('div');
-  closeButton.classList.add('close-button');
-  closeButton.textContent = 'X';
-  closeButton.addEventListener('click', closeModal);
-  modalActionsContainer.appendChild(closeButton);
+  let qrCode = document.createElement('img');
+  qrCode.height = '200';
+  qrCode.width = '200';
+  qrCode.src = './img/btc-address.jpg';
+  modal.appendChild(qrCode);
 
   let confirmButton = document.createElement('button');
   confirmButton.setAttribute('type', 'button');

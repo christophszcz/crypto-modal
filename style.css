@@ -82,6 +82,7 @@ button:active {
   background: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   padding: 1rem;
+  border-radius: 0.3rem;
 }
 
 .modal h1 {
@@ -94,6 +95,21 @@ button:active {
   text-align: right;
 }
 
+.close-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
 
 button.btn-confirm {
   border-color: green;
