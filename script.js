@@ -47,6 +47,10 @@ editValueButton.addEventListener('click', function() {
   qrCode.src = './img/btc-address.jpg';
   modal.appendChild(qrCode);
 
+  let modalFooter = document.createElement('div');
+  modalFooter.classList.add('modal-footer');
+  modal.appendChild(modalFooter);
+
   let confirmButton = document.createElement('button');
   confirmButton.setAttribute('type', 'button');
   confirmButton.classList.add('btn-confirm');
@@ -54,7 +58,7 @@ editValueButton.addEventListener('click', function() {
   confirmButton.addEventListener('click', function() {
     closeModal();
   });
-  modalActionsContainer.appendChild(confirmButton);
+  modalFooter.appendChild(confirmButton);
 
   document.body.insertBefore(modal, demoContainer);
 });
