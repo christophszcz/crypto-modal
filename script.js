@@ -3,7 +3,7 @@ let modal;
 let editValueButton = document.querySelector('button');
 let demoContainer = document.querySelector('.demo-container');
 
-let closeModal = () => {
+const closeModal = () => {
   if (backdrop) {
     backdrop.remove();
   }
@@ -13,7 +13,17 @@ let closeModal = () => {
   }
 };
 
-editValueButton.addEventListener('click', function() {
+const copyToClipboard = async () => {
+  try {
+    const addressValue = document.querySelector('.address').innerText;
+    await navigator.clipboard.writeText(addressValue);
+    toastr.info('Address copied');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+};
+
+editValueButton.addEventListener('click', () => {
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   backdrop.addEventListener('click', closeModal);
@@ -51,14 +61,22 @@ editValueButton.addEventListener('click', function() {
   modalFooter.classList.add('modal-footer');
   modal.appendChild(modalFooter);
 
-  let confirmButton = document.createElement('button');
-  confirmButton.setAttribute('type', 'button');
-  confirmButton.classList.add('btn-confirm');
-  confirmButton.textContent = 'Confirm';
-  confirmButton.addEventListener('click', function() {
-    closeModal();
-  });
-  modalFooter.appendChild(confirmButton);
+  let modalAddress = document.createElement('div');
+  modalAddress.classList.add('address');
+  modalAddress.textContent = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
+  modalFooter.appendChild(modalAddress);
+
+  let copyButton = document.createElement('button');
+  copyButton.setAttribute('type', 'button');
+  copyButton.classList.add('copy-button');
+  copyButton.setAttribute('title', 'Copy to clipboard');
+  copyButton.addEventListener('click', copyToClipboard);
+  modalFooter.appendChild(copyButton);
+
+  let copyIcon = document.createElement('i');
+  copyIcon.classList.add('material-icons');
+  copyIcon.textContent = 'content_copy';
+  copyButton.appendChild(copyIcon);
 
   document.body.insertBefore(modal, demoContainer);
 });

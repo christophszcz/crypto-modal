@@ -52,22 +52,6 @@ body {
   text-align: center;
 }
 
-button {
-  font: inherit;
-  background: transparent;
-  border: 2px solid #521751;
-  padding: 0.5rem 1rem;
-  color: #521751;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover,
-button:active {
-  border-color: #fa923f;
-  color: #fa923f;
-}
-
 /* The Modal */
 .modal {
   position: fixed;
@@ -109,8 +93,6 @@ button:active {
 
 .modal-footer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
