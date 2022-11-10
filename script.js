@@ -52,8 +52,8 @@ editValueButton.addEventListener('click', () => {
   modal.appendChild(modalActionsContainer);
 
   let qrCode = document.createElement('img');
-  qrCode.height = '200';
-  qrCode.width = '200';
+  qrCode.height = '300';
+  qrCode.width = '300';
   qrCode.src = './img/btc-address.jpg';
   modal.appendChild(qrCode);
 
@@ -74,8 +74,7 @@ editValueButton.addEventListener('click', () => {
   modalFooter.appendChild(copyButton);
 
   let copyIcon = document.createElement('i');
-  copyIcon.classList.add('material-icons');
-  copyIcon.textContent = 'content_copy';
+  copyIcon.classList.add('fa-regular', 'fa-copy');
   copyButton.appendChild(copyIcon);
 
   document.body.insertBefore(modal, demoContainer);
