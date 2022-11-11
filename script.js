@@ -38,6 +38,7 @@ editValueButton.addEventListener('click', () => {
   modal.appendChild(modalHeader);
 
   let modalHeading = document.createElement('div');
+  modalHeading.classList.add('modal-title');
   modalHeading.textContent = 'BTC Address';
   modalHeader.appendChild(modalHeading);
 

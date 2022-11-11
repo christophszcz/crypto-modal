@@ -2,10 +2,13 @@
   padding: 10px 0 0 2px;
 }
 
-/* .modal-title {
+.modal-title {
   font-weight: 900;
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
+/*
 .modal-body {
   display: flex;
   justify-content: center;
@@ -56,9 +59,9 @@ body {
 .modal {
   position: fixed;
   z-index: 200;
-  top: 40%;
-  left: 40%;
-  width: 20%;
+  top: 6%;
+  left: 35%;
+  width: 30%;
   background: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   padding: 1rem;
@@ -82,6 +85,8 @@ body {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   cursor: pointer;
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
 .modal-header {
