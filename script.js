@@ -2,6 +2,7 @@ let backdrop;
 let modal;
 let editValueButton = document.querySelector('button');
 let demoContainer = document.querySelector('.demo-container');
+const ADDRESS = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
 
 const closeModal = () => {
   if (backdrop) {
@@ -48,15 +49,15 @@ editValueButton.addEventListener('click', () => {
   closeButton.addEventListener('click', closeModal);
   modalHeader.appendChild(closeButton);
 
-  let modalActionsContainer = document.createElement('div');
-  modalActionsContainer.classList.add('modal-actions');
-  modal.appendChild(modalActionsContainer);
+  let modalBody = document.createElement('div');
+  modalBody.classList.add('modal-body');
+  modal.appendChild(modalBody);
 
   let qrCode = document.createElement('img');
   qrCode.height = '300';
   qrCode.width = '300';
   qrCode.src = './img/btc-address.jpg';
-  modal.appendChild(qrCode);
+  modalBody.appendChild(qrCode);
 
   let modalFooter = document.createElement('div');
   modalFooter.classList.add('modal-footer');
@@ -64,7 +65,7 @@ editValueButton.addEventListener('click', () => {
 
   let modalAddress = document.createElement('div');
   modalAddress.classList.add('address');
-  modalAddress.textContent = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
+  modalAddress.textContent = ADDRESS;
   modalFooter.appendChild(modalAddress);
 
   let copyButton = document.createElement('button');
