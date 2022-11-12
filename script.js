@@ -54,6 +54,7 @@ editValueButton.addEventListener('click', () => {
   modal.appendChild(modalBody);
 
   let qrCode = document.createElement('img');
+  qrCode.classList.add('address-qr-code');
   qrCode.height = '300';
   qrCode.width = '300';
   qrCode.src = './img/btc-address.jpg';

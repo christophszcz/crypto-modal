@@ -60,6 +60,10 @@ body {
   justify-content: center;
 }
 
+.address-qr-code {
+  margin: 25px 0 25px 0;
+}
+
 /* .address {
   font-weight: bold;
   width: 75%;
