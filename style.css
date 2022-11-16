@@ -98,7 +98,14 @@ body {
 }
 
 .fa-copy {
-  font-size: 40px;
+  font-size: 24px;
+}
+
+.copy-button {
+  color: #fff;
+  background-color: #6c757d;
+  cursor: pointer;
+  margin-top: 6px;
 }
 
 .backdrop {
