@@ -34,7 +34,6 @@ body {
   width: 30%;
   background: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-  padding: 1rem;
   border-radius: 0.3rem;
 }
 
@@ -74,11 +73,16 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: #000;
+  color: #5A6268;
   text-shadow: 0 1px 0 #fff;
   cursor: pointer;
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
+}
+
+.close-button:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 .modal-header {
