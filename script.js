@@ -18,7 +18,6 @@ const copyToClipboard = async () => {
   try {
     const addressValue = document.querySelector('.address').innerText;
     await navigator.clipboard.writeText(addressValue);
-    toastr.info('Address copied');
   } catch (err) {
     console.error('Failed to copy: ', err);
   }
