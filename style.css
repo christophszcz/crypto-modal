@@ -170,7 +170,11 @@ body {
 }
 
 @media (max-width: 325px) {
-  .address {
-    font-size: 12px;
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .copy-button {
+    margin-top: 10px;
   }
 }
