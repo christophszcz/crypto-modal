@@ -126,25 +126,51 @@ body {
   display: block;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 750px) {
   .address {
     font-size: 14px;
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 710px) {
+  .address {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 670px) {
   .modal {
     top: 0%;
     left: 0%;
     width: 100%;
     max-width: 100%;
+  }
+
+  .address-qr-code {
+    width: 100%;
+    height: auto;
+  }
+
+  .address {
     font-size: 15px;
   }
 }
 
-@media (max-width: 575px) {
-  .address-qr-code {
-    width: 100%;
-    height: auto;
+@media (max-width: 380px) {
+  .address {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 355px) {
+  .address {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 325px) {
+  .address {
+    font-size: 12px;
   }
 }
