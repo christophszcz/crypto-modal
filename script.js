@@ -1,6 +1,6 @@
 let backdrop;
 let modal;
-let editValueButton = document.querySelector('button');
+let openModalButton = document.querySelector('.btc-qr-code-button');
 let demoContainer = document.querySelector('.demo-container');
 const ADDRESS = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
 
@@ -23,7 +23,7 @@ const copyToClipboard = async () => {
   }
 };
 
-editValueButton.addEventListener('click', () => {
+openModalButton.addEventListener('click', () => {
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   backdrop.addEventListener('click', closeModal);
