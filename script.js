@@ -1,7 +1,6 @@
 let backdrop;
 let modal;
 let openModalButton = document.querySelector('.btc-qr-code-button');
-let demoContainer = document.querySelector('.demo-container');
 const ADDRESS = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
 
 const closeModal = () => {
@@ -27,7 +26,7 @@ openModalButton.addEventListener('click', () => {
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   backdrop.addEventListener('click', closeModal);
-  document.body.insertBefore(backdrop, demoContainer);
+  document.body.appendChild(backdrop);
   backdrop.addEventListener('click', closeModal);
 
   modal = document.createElement('div');
@@ -79,5 +78,5 @@ openModalButton.addEventListener('click', () => {
   copyIcon.classList.add('fa-regular', 'fa-copy');
   copyButton.appendChild(copyIcon);
 
-  document.body.insertBefore(modal, demoContainer);
+  document.body.appendChild(modal);
 });
