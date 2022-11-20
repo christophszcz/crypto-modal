@@ -23,14 +23,19 @@ const copyToClipboard = async () => {
 };
 
 openModalButton.addEventListener('click', () => {
+  let modalContainer = document.createElement('div');
+  modalContainer.classList.add('modal-container');
+  document.body.appendChild(modalContainer);
+
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   backdrop.addEventListener('click', closeModal);
-  document.body.appendChild(backdrop);
+  modalContainer.appendChild(backdrop);
   backdrop.addEventListener('click', closeModal);
 
   modal = document.createElement('div');
   modal.classList.add('modal');
+  modalContainer.appendChild(modal);
 
   let modalHeader = document.createElement('div');
   modalHeader.classList.add('modal-header');
@@ -77,6 +82,4 @@ openModalButton.addEventListener('click', () => {
   let copyIcon = document.createElement('i');
   copyIcon.classList.add('fa-regular', 'fa-copy');
   copyButton.appendChild(copyIcon);
-
-  document.body.appendChild(modal);
 });
