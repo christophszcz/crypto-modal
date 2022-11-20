@@ -12,7 +12,12 @@ body {
   margin: 0;
 }
 
-.development-container {
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.development-button-container {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -30,7 +35,6 @@ body {
   position: fixed;
   z-index: 200;
   top: 6%;
-  left: 35%;
   width: 50%;
   background: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
