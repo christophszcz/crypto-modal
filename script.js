@@ -1,7 +1,7 @@
 let backdrop;
 let modal;
 let openModalButton = document.querySelector('.btc-qr-code-button');
-const ADDRESS = '13gEbbMta5aPknqrwLajP9QR2oCxUB1JVw';
+const ADDRESS = document.querySelector('.btc-qr-code-button').value;
 
 const closeModal = () => {
   if (backdrop) {
