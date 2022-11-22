@@ -107,6 +107,7 @@ body {
 
 .fa-copy {
   font-size: 24px;
+  padding: 10px;
 }
 
 .copy-button {
@@ -114,6 +115,7 @@ body {
   background-color: #6c757d;
   cursor: pointer;
   margin-top: 6px;
+  border-radius: 5px;
 }
 
 .backdrop {
