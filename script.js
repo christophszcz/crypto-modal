@@ -58,8 +58,8 @@ openModalButton.addEventListener('click', () => {
 
   let qrCode = document.createElement('img');
   qrCode.classList.add('address-qr-code');
-  qrCode.height = '300';
-  qrCode.width = '300';
+  qrCode.height = '400';
+  qrCode.width = '400';
   qrCode.src = './img/btc-address.jpg';
   modalBody.appendChild(qrCode);
 
