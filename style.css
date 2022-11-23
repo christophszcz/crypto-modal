@@ -71,6 +71,7 @@ body {
   word-wrap: break-word;
   margin-top: auto;
   font-size: 15px;
+  margin: auto;
 }
 
 .close-button {
@@ -132,15 +133,28 @@ body {
   display: block;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+  .address-qr-code{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 770px) {
   .address {
     font-size: 14px;
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 750px) {
   .address {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 710px) {
+  .address {
+    font-size: 12px;
   }
 }
 
