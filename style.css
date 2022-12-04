@@ -201,9 +201,9 @@ body {
 
 @media (max-width: 295px) {
   .address {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 100%;
-      overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
   }
 }
