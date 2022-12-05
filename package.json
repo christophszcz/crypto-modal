@@ -1,24 +1,23 @@
 {
-    "name": "@christophszcz/btc-button",
-    "version": "1.0.0",
-    "description": "Quick BTC QR code website integration",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/christophszcz/btcButton.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/christophszcz/btcButton/issues"
-    },
-    "homepage": "https://github.com/christophszcz/btcButton#readme",
-    "devDependencies": {
-    },
-    "dependencies": {
-      "toastr": "^2.1.4"
-    }
+  "name": "@christophszcz/btc-button",
+  "version": "1.0.0",
+  "description": "Quick BTC QR code website integration",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophszcz/btcButton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophszcz/btcButton/issues"
+  },
+  "homepage": "https://github.com/christophszcz/btcButton#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "toastr": "^2.1.4"
+  }
 }
