@@ -1,7 +1,7 @@
 {
-  "name": "@christophszcz/btc-button",
+  "name": "@christophszcz/crypto-modal",
   "version": "1.0.0",
-  "description": "Quick BTC QR code website integration",
+  "description": "Responsive BTC or crypto QR code modal easily integrated with any button",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
