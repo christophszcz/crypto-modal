@@ -2,10 +2,7 @@ let backdrop;
 let modal;
 let openModalButton = document.querySelector('.btc-qr-code-button');
 const ADDRESS = document.querySelector('.btc-qr-code-button').value;
-
-toastr.options = {
-  "closeButton": true
-};
+const notyf = new Notyf();
 
 const closeModal = () => {
   if (backdrop) {
@@ -21,7 +18,10 @@ const copyToClipboard = async () => {
   try {
     const addressValue = document.querySelector('.address').innerText;
     await navigator.clipboard.writeText(addressValue);
-    toastr.info('Address copied');
+    notyf.open({
+      type: 'success',
+      message: 'Address copied'
+    });
   } catch (err) {
     console.error('Failed to copy: ', err);
   }
