@@ -8,15 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christophszcz/btcButton.git"
+    "url": "git+https://github.com/christophszcz/crypto-modal.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/christophszcz/btcButton/issues"
+    "url": "https://github.com/christophszcz/crypto-modal/issues"
   },
-  "homepage": "https://github.com/christophszcz/btcButton#readme",
-  "devDependencies": {},
+  "homepage": "https://github.com/christophszcz/crypto-modal#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3"
+  },
   "dependencies": {
     "notyf": "3.10.0"
   }
